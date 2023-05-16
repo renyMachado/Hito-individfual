@@ -1,0 +1,172 @@
+
+  
+  /*@keyframes color {
+    from { 
+      background-position: 0% 50%;
+    }
+    to { 
+      background-position: 100% 50%; 
+      }
+  }*/
+
+
+
+
+.tabla{
+  border: 4px solid #000000;
+  border-radius: 10px;
+  width: 100%;
+  color: white;
+  font-weight: lighter;
+  margin: 0 auto;
+  text-align: center;
+  border-collapse: separate;
+  border-color: #000000; 
+  background-color: rgba(37, 37, 37, 0.507);
+}
+
+
+
+P1{
+    font-size: 45px;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    border: solid;
+    border-radius: 15px;
+    border-color: rgba(0, 0, 0, 0.692) ;
+    background-color: #ff000047;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tabla thead{
+  border: solid;
+  border-radius: 50px ;
+  background-color: #000000;
+  color: white;
+  line-height: 2.5;
+  font-size: 17px;
+}
+
+.tabla tbody{
+  border: none;
+  font-size: 17px;
+}
+
+
+.tabla {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: tablaFadeIn 1s forwards;
+}
+
+@keyframes tablaFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tabla th,
+.tabla td {
+  padding: 10px;
+}
+
+
+.tabla tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+  color: #000000;
+}
+
+
+
+.tabla tbody tr:hover {
+  background-color: #5e5e5e91;
+  transition: background-color 0.3s;
+}
+
+
+canvas{
+    width: 100%;
+    height: 100%;
+}
+#canvas, #text {
+	position: fixed;
+	display: flex;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+
+
+
+
+
+
+/* Animación para las tablas */
+.tabla {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: tablaFadeIn 1s forwards;
+}
+
+@keyframes tablaFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+/*Media querys*/
+
+/*resolucion movil S*/
+@media (min-width: 320px) and (max-width: 424px) {
+    
+  P1{
+    width: 708px;
+  }
+
+ 
+}
+
+
+
+/*resolucion movil M*/
+@media (min-width: 577px) and (max-width: 767px) {
+  
+  P1{
+    width: 708px;
+  }
+
+}
+
+
+
+/*resolucion movil L*/
+@media (min-width: 425px) and (max-width: 576px) {
+
+  P1{
+    width: 708px;
+  }
+
+
+}
